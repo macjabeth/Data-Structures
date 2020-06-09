@@ -1,3 +1,9 @@
+import sys
+
+sys.path.append('/Users/macjabeth/Projects/Data-Structures/singly_linked_list')
+
+from singly_linked_list import SinglyLinkedList
+
 """
 A stack is a data structure whose primary purpose is to store and
 return elements in Last In First Out order. 
@@ -40,7 +46,7 @@ class Stack:
         self.storage.set_head(value)
         self.size += 1
 
-    def pop(self, value):
+    def pop(self):
         self.size -= 1
 
         if self.size < 0:
